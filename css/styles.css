@@ -17,16 +17,68 @@
 
 /*Mobile*/
 body {
-  min-width: 320px;
-
   font-family: AvenirNextCyr;
   font-weight: normal;
   font-style: normal;
-  color: #000000;
+  color: #3C3C3C;
 
   padding: 0;
   margin: 0;
   margin-top: 20px;
+}
+
+.block-title1 {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.block-title2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.block-title3 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.block-text1 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.block-text2 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.block-text3 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
 }
 
 .container {
@@ -51,6 +103,10 @@ body {
 }
 
 /*header*/
+.main-header {
+  margin-bottom: 35px;
+}
+
 .header-logo {
   margin-bottom: 10px;
   margin-right: auto;
@@ -60,8 +116,7 @@ body {
   font-size: 16px;
 }
 
-.phone-number::before
-{
+.phone-number::before {
   display: inline-block;
   content: "";
   width: 17px;
@@ -73,3 +128,114 @@ body {
   margin-right: 7px;
 }
 
+/*special-account*/
+
+.special-account {
+  margin-bottom: 51px;
+}
+
+.main-button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+
+  height: 65px;
+  line-height: 65px;
+
+  background-color: #6882F1;
+  box-shadow: 0px 10px 20px rgba(104, 130, 241, 0.2);
+
+  border: none;
+  border-radius: 2px;
+}
+
+.main-button:hover {
+  background-color: #4D89FF;
+}
+
+.main-button:active {
+  background-color: #3D57C6;
+}
+
+/*tariffes*/
+
+.tariffes-section {
+  margin-bottom: 70px;
+}
+
+.tariffes-slider {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.price {
+  margin-bottom: 21px;
+}
+
+.price-number {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.price-number::after {
+  display: inline;
+
+  content: "₽";
+  font-size: 15px;
+  vertical-align: super;
+}
+
+.tariff-condition {
+  color: #919191;
+}
+
+.tariff-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  display: block;
+  width: 254px;
+
+  padding: 30px 37px 38px 25px;
+  margin: 0;
+
+  mix-blend-mode: normal;
+  border: 0.25px solid #A9A9A9;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.tariff-item .block-text2 {
+  margin-bottom: 20px;
+}
+
+.tariff-first-condition {
+  margin-top: 21px;
+}
+
+.tariff-button {
+  color: #3C3C3C;
+  background-color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+
+  mix-blend-mode: normal;
+  border: 0.75px solid #6882F1;
+  box-shadow: 0px 10px 20px rgba(104, 130, 241, 0.2);
+  border-radius: 2px;
+}
+
+.tariff-button:hover {
+  background-color: #ffffff;
+}
+
+.tariff-button:active {
+  background-color: #ffffff;
+}
