@@ -16,6 +16,15 @@
 }
 
 /*Mobile*/
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.link_grey {
+  color:#9C9C9F;
+}
+
 body {
   font-family: AvenirNextCyr;
   font-weight: normal;
@@ -27,59 +36,77 @@ body {
   margin-top: 20px;
 }
 
-.block-title1 {
+.block-title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
+.block-title__heading1 {
   font-size: 22px;
   line-height: 24px;
-  font-weight: bold;
 }
 
-.block-title2 {
-  margin: 0;
-  margin-bottom: 20px;
-
+.block-title__heading2 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: bold;
 }
 
-.block-title3 {
-  margin: 0;
-  margin-bottom: 20px;
-
+.block-title__heading3 {
   font-size: 21px;
   line-height: 25px;
-  font-weight: bold;
 }
 
-.block-text1 {
+.block-title_white {
+  color: #ffffff;
+}
+
+.block__transparent {
+  opacity: 0.5;
+}
+
+.block-text {
   margin: 0;
   margin-bottom: 25px;
 
+  font-weight: normal;
+}
+
+.block-text__paragraph-header {
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
 }
 
-.block-text2 {
-  margin: 0;
-  margin-bottom: 25px;
-
+.block-text__paragraph-regular {
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
 }
 
-.block-text3 {
-  margin: 0;
-  margin-bottom: 25px;
-
+.block-text__paragraph-small {
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
 }
+
+.block-text__white {
+  color: #ffffff;
+}
+
+.list__slider {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  overflow-x: scroll;
+
+  -ms-overflow-style: none;
+}
+
+.list__slider::-webkit-scrollbar {
+  width: 0;
+}
+
 
 .container {
   display: -webkit-flex;
@@ -164,24 +191,25 @@ body {
   margin-bottom: 70px;
 }
 
-.tariffes-slider {
+.tariffes-list {
+
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
 
-.price {
+.tariff-item_price {
   margin-bottom: 21px;
 }
 
-.price-number {
+.tariff-item_price__number {
   font-size: 30px;
   font-weight: bold;
   line-height: 25px;
 }
 
-.price-number::after {
+.tariff-item_price__number::after {
   display: inline;
 
   content: "₽";
@@ -189,7 +217,7 @@ body {
   vertical-align: super;
 }
 
-.tariff-condition {
+.tariff-item__condition {
   color: #919191;
 }
 
@@ -200,10 +228,12 @@ body {
   box-sizing: border-box;
 
   display: block;
+  min-width: 254px;
   width: 254px;
 
   padding: 30px 37px 38px 25px;
   margin: 0;
+  margin-right: 15px;
 
   mix-blend-mode: normal;
   border: 0.25px solid #A9A9A9;
@@ -212,7 +242,7 @@ body {
   border-radius: 4px;
 }
 
-.tariff-item .block-text2 {
+.tariff-item .block-text__paragraph-regular {
   margin-bottom: 20px;
 }
 
@@ -239,3 +269,111 @@ body {
 .tariff-button:active {
   background-color: #ffffff;
 }
+
+/*Госзакупки*/
+.article {
+  background-color: #4365E9;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  padding-top: 30px;
+  padding-bottom: 33px;
+}
+
+.temporary-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*Тендеры*/
+.tender-section {
+  padding-top: 60px;
+}
+
+.tender-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Торговые площадки*/
+
+.floors-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.floors-list_item {
+  min-width: 220px;
+  height: 180px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  border: 1px solid #F4F4F4;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-flow: column;
+
+  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-left: 16px;
+  padding-right: 28px;
+  margin-right: 10px;
+}
+
+.floors-list_item_img {
+  max-width: 100%;
+  margin-right: auto;
+  height: fit-content;
+}
+
+/*Инструкция*/
+.instructions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructions-list_step {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  width: 180px;
+
+  margin-right: 22px;
+}
+
+.instructions-list_step_image {
+  margin-bottom: 22px;
+}
+
+.how-to-start_button {
+  margin-bottom: 25px;
+}
+
