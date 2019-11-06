@@ -25,6 +25,11 @@ a {
   color:#9C9C9F;
 }
 
+.link_blue {
+  color: #0865E2;;
+  text-decoration: none;
+}
+
 body {
   font-family: AvenirNextCyr;
   font-weight: normal;
@@ -63,6 +68,10 @@ body {
 
 .block__transparent {
   opacity: 0.5;
+}
+
+.block-text__grey {
+  color: #9B9B9B;
 }
 
 .block-text {
@@ -421,6 +430,10 @@ body {
 
 /*Форма*/
 
+.request-form {
+  margin-bottom: 10px;
+}
+
 .request-form-section {
   padding-top: 24px;
 }
@@ -507,7 +520,7 @@ body {
 
   transition: top .1s linear;
 
-  color: #A9A9A9;
+  color: rgba(0,0,0,0.5);
 }
 
 .request-form_field {
@@ -536,5 +549,23 @@ body {
 
 .main-button__submit {
   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 16px;
 }
 
+/*Подвал*/
+
+.page-footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-flow: column;
+}
+
+.link__footer {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
