@@ -11,7 +11,7 @@
     <!-- header -->
     <header class="main-header">
       <div class="container">
-        <img src="img/header-logo.svg" alt="Логотип промсвязьбанка" class="header-logo">
+        <img src="img/header-logo.svg" alt="Логотип промсвязьбанка" class="header_logo">
         <span class="phone-number">+7 495 544-71-31</span>
       </div>
     </header>
@@ -178,7 +178,7 @@
         </ul>
       </div>
     </div>
-
+    <!-- how-te start section -->
     <div class="how-to-start">
       <div class="container">
         <h2 class="block-title block-title__heading2">Как начать работать?</h2>
@@ -206,10 +206,74 @@
         </ul>
         <button class="main-button how-to-start_button">Заполнить заявку</button>
 
-        <h3 class="block-title block-title__heading3 block__transparent">Для чего нужен спецсчёт?</h2>
+        <h3 class="block-title block-title__heading3 block__transparent">Для чего нужен спецсчёт?</h3>
         <a href="#" class="article_link link_grey mobile-only">Узнать больше</a>
 
         <p class="block-text block-text__paragraph-header  temporary-hidden block__transparent">Основная задача спецсчета для участия в закупках — размещение денег для обеспечения заявок. В зависимости от хода торгов средства либо возвращают участнику, либо переводят заказчику. Кроме того, банк обязуют начислять проценты поставщикам за пользование их деньгами.</p>
+      </div>
+    </div>
+
+    <!-- what you need section -->
+    <div class="start-requirements">
+        <h2 class="block-title block-title__heading2 block-text__centered">Что нужно для оформления спецсчета?</h2>
+        <!-- TODO: everything -->
+    </div>
+
+    <div class="article">
+      <div class="container">
+        <img src="img/finax-logo-discount.png" alt="Логотип финакса" class="article_logo">
+
+        <h2 class="block-title block-title__heading2 block-title_white">Скидка на выпуск первой банковской гарантии 30%</h2>
+
+        <p class="block-text block-text__paragraph-small block-text__white article_block-text">Оформляйте банковские гарантии за 1 день, по-лучая решения моментально через онлайн-сервис «Финакс».</p>
+
+        <button class="main-button main-button__white">Открыть счёт</button>
+      </div>
+    </div>
+
+    <div class="request-form-section">
+      <div class="container">
+        <h2 class="block-title block-title__heading2">Заявка на открытие спецсчета за 10 минут</h2>
+        <form action="#" method="POST" class="request-form">
+
+          <span class="entity-choose_label">Форма юр. лица <span class="form-field__required">*</span></span>
+
+          <div class="request-form_entity-choose">
+
+            <label for="entity-choose__ip">
+              <input type="radio" name="entity-choose" class="entity-choose visually-hidden" id="entity-choose__ip" value="ip" checked>
+              <span>ИП</span>
+            </label>
+
+            <label for="entity-choose__ooo">
+              <input type="radio" name="entity-choose" class="entity-choose visually-hidden" id="entity-choose__ooo" value="ooo">
+              <span>ООО</span>
+            </label>
+
+          </div>
+
+          <div class="form-field-wrapper">
+            <input type="text" class="request-form_field" id="request-form_name">
+            <label for="request-form_name">Моё имя <span class="form-field__required">*</span></label>
+          </div>
+
+          <div class="form-field-wrapper">
+            <input type="text" class="request-form_field" id="request-form_phone">
+            <label for="request-form_phone">Телефон <span class="form-field__required">*</span></label>
+          </div>
+
+          <div class="form-field-wrapper">
+            <input type="text" class="request-form_field" id="request-form_inn">
+            <label for="request-form_inn">ИНН <span class="form-field__required">*</span></label>
+          </div>
+
+          <div class="form-field-wrapper">
+            <input type="text" class="request-form_field" id="request-form_city">
+            <label for="request-form_city">Город <span class="form-field__required">*</span></label>
+          </div>
+
+          <button type="submit" class="main-button main-button__submit">Отправить заявку</button>
+        </form>
       </div>
     </div>
 
