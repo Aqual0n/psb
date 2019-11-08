@@ -38,7 +38,7 @@ body {
 
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .block-title {
@@ -189,6 +189,7 @@ body {
   font-weight: normal;
   padding: 0;
 
+  max-width: 100%;
   height: 65px;
   line-height: 65px;
 
@@ -197,6 +198,7 @@ body {
 
   border: none;
   border-radius: 2px;
+
 }
 
 .main-button:hover {
@@ -568,4 +570,130 @@ body {
 .link__footer {
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+/*tablet*/
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .temporary-hidden {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .special-account_first-sentence {
+    margin-bottom: 25px;
+  }
+
+
+  .block-title__heading1 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .block-title__heading2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .block-title__heading3 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .block-text__paragraph-header {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .block-text__paragraph-regular {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .block-text__paragraph-small {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .main-button {
+    width: 225px;
+  }
+
+  .mobile-only {
+      display: none;
+  }
+
+
+  /*Специальный счёт*/
+  .header-wrapper {
+    background-image: url(../img/backgrounds/car-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    -webkit-background-size: 51%;
+    background-size: 51%;
+
+    padding-top: 40px;
+  }
+
+  .special-account .block-title__heading1 {
+      max-width: 440px;
+  }
+
+  .special-account .block-text__paragraph-header {
+      max-width: 320px;
+  }
+
+
+
+  /*Тарифы*/
+
+  .tariff-item {
+    width: 157px;
+    min-width: 157px;
+    padding: 0;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  .tariff-conditions {
+    width: 85px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-flow: column;
+
+    margin-right: 35px;
+  }
+
+  .tariff-conditions .tariff-item__condition{
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  .tariff-item_price__number {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .tariffes-list {
+    justify-content: space-between;
+  }
+
 }

@@ -9,42 +9,39 @@
 	</head>
 	<body>
     <!-- header -->
-    <header class="main-header">
-      <div class="container">
-        <img src="img/header-logo.svg" alt="Логотип промсвязьбанка" class="header_logo">
-        <span class="phone-number">+7 495 544-71-31</span>
-      </div>
-    </header>
-    <!-- special-account section -->
-    <div class="special-account">
-      <div class="container">
-        <h2 class="block-title block-title__heading1">Откройте специальный счет до 29 декабря и получите кэшбэк 20000₽</h2>
-        <p class="block-text block-text__paragraph-header">Оформите заявку и используйте спец. счет для участия в тендерах уже через 30 минут.</p>
-        <button class="main-button">Заполнить анкету</button>
-      </div>
+    <div class="header-wrapper">
+
+      <header class="main-header">
+        <div class="container">
+          <img src="img/header-logo.svg" alt="Логотип промсвязьбанка" class="header_logo">
+          <span class="phone-number">+7 495 544-71-31</span>
+        </div>
+      </header>
+      <!-- special-account section -->
+      <div class="special-account">
+        <div class="container">
+          <p class="block-text block-text__paragraph-header block__transparent temporary-hidden special-account_first-sentence">Эксклюзивное предложение «Победа за наш счет»</p>
+          <h1 class="block-title block-title__heading1">Откройте специальный счет до 29 декабря и получите кэшбэк 20000₽</h1>
+          <p class="block-text block-text__paragraph-header">Оформите заявку и используйте спец. счет для участия в тендерах уже через 30 минут.</p>
+          <button class="main-button">Заполнить анкету</button>
+        </div>
     </div>
+
+    </div>
+
     <!-- tariffes section -->
     <div class="tariffes-section">
       <div class="container">
         <h2 class="block-title block-title__heading2">Тарифы на обслуживание специального счета</h2>
 
         <ul class="tariffes-list list__slider">
-          <li class="tariff-item">
-            <h3 class="block-title block-title__heading3">Старт</h3>
-            <span class="tariff-item_price">
-              <span class="tariff-item_price tariff-item_price__number">0</span> в мес.
-            </span>
-            <p class="block-text block-text__paragraph-regular tariff-first-condition">
-              <span class="tariff-item__condition">Подходит для</span> начинающего бизнеса с минимальным оборотом
-            </p>
-            <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition">Интернет-банк:</span> Бесплатно
-            </p>
-            <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition">Внесение наличных:</span> 0.25%, но не меньше 150
-            </p>
 
-            <button class="main-button tariff-button">Заполнить анкету</button>
+          <li class="tariff-conditions temporary-hidden ">
+            <span class="tariff-item__condition block-text__paragraph-small">Тариф</span>
+            <span class="tariff-item__condition block-text__paragraph-small">Сумма в мес.</span>
+            <span class="tariff-item__condition block-text__paragraph-small">Подходит для</span>
+            <span class="tariff-item__condition block-text__paragraph-small">Интернет-банк</span>
+            <span class="tariff-item__condition block-text__paragraph-small">Внесение наличных</span>
           </li>
 
           <li class="tariff-item">
@@ -53,31 +50,49 @@
               <span class="tariff-item_price tariff-item_price__number">0</span> в мес.
             </span>
             <p class="block-text block-text__paragraph-regular tariff-first-condition">
-              <span class="tariff-item__condition">Подходит для</span> начинающего бизнеса с минимальным оборотом
+              <span class="tariff-item__condition mobile-only">Подходит для</span> Начинающего бизнеса с минимальным оборотом
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition">Интернет-банк:</span> Бесплатно
+              <span class="tariff-item__condition mobile-only">Интернет-банк:</span> Бесплатно
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition">Внесение наличных:</span> 0.25%, но не меньше 150
+              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> 0.25%, но не меньше 150
             </p>
 
             <button class="main-button tariff-button">Заполнить анкету</button>
           </li>
 
           <li class="tariff-item">
-            <h3 class="block-title block-title__heading3">Старт</h3>
+            <h3 class="block-title block-title__heading3">Оптимальный</h3>
             <span class="tariff-item_price">
-              <span class="tariff-item_price tariff-item_price__number">0</span> в мес.
+              <span class="tariff-item_price tariff-item_price__number">399</span> в мес.
             </span>
             <p class="block-text block-text__paragraph-regular tariff-first-condition">
-              <span class="tariff-item__condition">Подходит для</span> начинающего бизнеса с минимальным оборотом
+              <span class="tariff-item__condition mobile-only">Подходит для</span> Компаний с небольшим оборотом
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition">Интернет-банк:</span> Бесплатно
+              <span class="tariff-item__condition mobile-only">Интернет-банк:</span> 99₽ в мес.
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition">Внесение наличных:</span> 0.25%, но не меньше 150
+              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> до 30 000 – 0%, свыше 30 000 – 1%
+            </p>
+
+            <button class="main-button tariff-button">Заполнить анкету</button>
+          </li>
+
+          <li class="tariff-item">
+            <h3 class="block-title block-title__heading3">24х7</h3>
+            <span class="tariff-item_price">
+              <span class="tariff-item_price tariff-item_price__number">1600</span> в мес.
+            </span>
+            <p class="block-text block-text__paragraph-regular tariff-first-condition">
+              <span class="tariff-item__condition mobile-only">Подходит для</span> Компаний с безналичным расчетом
+            </p>
+            <p class="block-text block-text__paragraph-regular">
+              <span class="tariff-item__condition mobile-only">Интернет-банк:</span> Бесплатно
+            </p>
+            <p class="block-text block-text__paragraph-regular">
+              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> до 30 000  бесплатно, свыше 30 000₽ - 0,25%
             </p>
 
             <button class="main-button tariff-button">Заполнить анкету</button>
