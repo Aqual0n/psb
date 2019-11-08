@@ -21,6 +21,12 @@ a {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
 .link_grey {
   color:#9C9C9F;
 }
@@ -138,7 +144,7 @@ body {
 
   margin: 0 auto;
 
-  width: 87.5%;
+  width: 90%;
   max-width: 767px;
 }
 
@@ -189,6 +195,7 @@ body {
   font-weight: normal;
   padding: 0;
 
+  width: 225px;
   max-width: 100%;
   height: 65px;
   line-height: 65px;
@@ -266,9 +273,20 @@ body {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 
-  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-flow: column;
+
+  justify-content: space-between;
+
   min-width: 254px;
   width: 254px;
+
+
 
   padding: 30px 37px 38px 25px;
   margin: 0;
@@ -351,6 +369,7 @@ body {
 
 .floors-list_item {
   min-width: 220px;
+  width: 220px;
   height: 180px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -418,6 +437,7 @@ body {
 
 .how-to-start_button {
   margin-bottom: 25px;
+  width: 225px;
 }
 
 /*Что надо (не сделано)*/
@@ -572,9 +592,23 @@ body {
   margin-bottom: 10px;
 }
 
+.page-footer_links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-flow: column;
+}
+
 /*tablet*/
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
@@ -607,6 +641,10 @@ body {
     line-height: 25px;
   }
 
+  .block-text {
+    margin-bottom: 25px;
+  }
+
   .block-text__paragraph-header {
     font-size: 12px;
     line-height: 16px;
@@ -620,6 +658,10 @@ body {
   .block-text__paragraph-small {
     font-size: 10px;
     line-height: 16px;
+  }
+
+  .container {
+    max-width: 1200px;
   }
 
   .main-button {
@@ -662,10 +704,15 @@ body {
 
     border: none;
     box-shadow: none;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
   }
 
   .tariff-conditions {
     width: 85px;
+    height: 230px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -679,12 +726,12 @@ body {
 
     flex-flow: column;
 
+    justify-content: space-between;
+
     margin-right: 35px;
   }
 
   .tariff-conditions .tariff-item__condition{
-    margin-bottom: 20px;
-    line-height: 25px;
   }
 
   .tariff-item_price__number {
@@ -696,4 +743,131 @@ body {
     justify-content: space-between;
   }
 
+  .tariff-first-condition {
+    margin-top: 0;
+  }
+
+  /*Госзакупки*/
+
+  .article__public-purchase .container {
+    flex-flow: row;
+  }
+
+  .article_image {
+    margin-top: -50px;
+    margin-right: 25px;
+  }
+
+  /*Тендеры*/
+
+  .tender-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .tender-list_item {
+    margin-right: 20px;
+  }
+
+  /*Площадки*/
+
+
+  .floors-list {
+    flex-wrap:wrap;
+  }
+
+  .floors-list_item {
+    margin-bottom: 10px;
+  }
+
+  /*Инструкции*/
+
+  .special-account_wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+
+  .how-to-start_button {
+    min-width: 225px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+
+
+  /*что надо (доделать)*/
+
+  /*финакс*/
+
+  .article-discount_text-wrapper{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .main-button__small.main-button__white {
+    min-width: 155px;
+    margin-left: 22px;
+  }
+
+  /*Форма*/
+
+  .request-form-section .container{
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .request-form {
+    margin-right: 90px;
+  }
+
+  .advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    padding-top: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /*Подвал*/
+
+  .page-footer .block-text {
+    color: #000000;
+    font-size: 12px;
+  }
+
+  .footer_text-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+
+  .footer_text-wrapper p:first-child{
+    margin-right: 14px;
+  }
+
+  .page-footer_links-list a:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .page-footer_links-list {
+    flex-flow: row;
+  }
 }
