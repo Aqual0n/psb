@@ -463,7 +463,71 @@ body {
   margin-bottom: 25px;
 }
 
-/*Что надо (не сделано)*/
+/*Что надо */
+
+.start-requirements_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-flow: column;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.start-requirements_list li{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-flow: row wrap;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+.start-requirements_list li:not(:first-child) {
+  justify-content: center;
+  align-items: center;
+}
+
+.start-requirements > h2 {
+  margin: 15px;
+  margin-top: 0;
+}
+
+.requirement-text-wrapper {
+  max-width: 185px;
+  margin-left: 20px;
+}
+
+.requirement:last-child .requirement-image{
+  transform: rotate(125deg);
+  width: 150px;
+  margin-left: -95px;
+}
+
+.requirement:nth-child(2) .requirement-image{
+  width: 120px;
+}
+
+.requirement:nth-child(2) .requirement-text-wrapper {
+  max-width: 154px;
+}
+
+.requirement:first-child .requirement-text-wrapper{
+  margin-left: auto;
+  margin-right: 10px;
+}
 
 /*Скидка*/
 
@@ -715,8 +779,6 @@ body {
       max-width: 320px;
   }
 
-
-
   /*Тарифы*/
 
   .tariff-item {
@@ -833,7 +895,29 @@ body {
     margin-bottom: 50px
   }
 
-  /*что надо (доделать)*/
+  /*что надо*/
+
+  .start-requirements_list {
+    flex-flow: row;
+  }
+
+  .requirement:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .requirement-image {
+    width: auto;
+  }
+
+  .requirement:last-child .requirement-image {
+    transform: none;
+    margin: 0;
+    width: auto;
+  }
+
+  .requirement:nth-child(2) .requirement-image {
+    width: auto;
+}
 
   /*финакс*/
 
