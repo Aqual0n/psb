@@ -465,6 +465,10 @@ body {
 
 /*Что надо */
 
+.start-requirements {
+  margin-bottom: 50px;
+}
+
 .start-requirements_list {
   padding: 0;
   margin: 0;
@@ -910,7 +914,7 @@ body {
   }
 
   .requirement:last-child .requirement-image {
-    transform: none;
+    transform: translateY(-25px) translateX(-15px) scale(1.1);
     margin: 0;
     width: auto;
   }
@@ -1195,6 +1199,12 @@ body {
   .special-account_text-wrapper {
     padding-top: 40px;
   }
+
+  /*Что надо*/
+  .requirement:last-child .requirement-image {
+    transform: scale(1.2) translate(2px, -79px);
+  }
+
   /*Скидка финакс*/
 
   .article_logo,
