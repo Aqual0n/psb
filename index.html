@@ -9,14 +9,14 @@
 	</head>
 	<body>
     <!-- header -->
-    <div class="header-wrapper">
+    <header class="main-header">
 
-      <header class="main-header">
+      <div class="logo-wrapper">
         <div class="container">
           <img src="img/header-logo.svg" alt="Логотип промсвязьбанка" class="header_logo">
           <span class="phone-number">+7 495 544-71-31</span>
         </div>
-      </header>
+      </div>
       <!-- special-account section -->
       <div class="special-account">
         <div class="container">
@@ -25,9 +25,8 @@
           <p class="block-text block-text__paragraph-header">Оформите заявку и используйте спец. счет для участия в тендерах уже через 30 минут.</p>
           <button class="main-button">Заполнить анкету</button>
         </div>
-    </div>
-
-    </div>
+      </div>
+    </header>
 
     <!-- tariffes section -->
     <div class="tariffes-section">
@@ -55,7 +54,7 @@
               <span class="tariff-item__condition mobile-only">Интернет-банк:</span> Бесплатно
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> 0.25%,<br class="temporary-hidden"> но не меньше 150
+              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> 0.25%,<br class="temporary-hidden"> но не меньше 150<span class="block-text__supper">₽</span>
             </p>
 
             <button class="main-button tariff-button">Заполнить анкету</button>
@@ -70,7 +69,7 @@
               <span class="tariff-item__condition mobile-only">Подходит для: </span> Компаний с небольшим оборотом
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition mobile-only">Интернет-банк:</span> 99₽ в мес.
+              <span class="tariff-item__condition mobile-only">Интернет-банк:</span> 99<span class="block-text__supper">₽</span> в мес.
             </p>
             <p class="block-text block-text__paragraph-regular">
               <span class="tariff-item__condition mobile-only">Внесение наличных:</span> до 30 000 – 0%, свыше 30 000 – 1%
@@ -91,7 +90,7 @@
               <span class="tariff-item__condition mobile-only">Интернет-банк:</span> Бесплатно
             </p>
             <p class="block-text block-text__paragraph-regular">
-              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> до 30 000  бесплатно, свыше 30 000₽ - 0,25%
+              <span class="tariff-item__condition mobile-only">Внесение наличных:</span> до 30 000  бесплатно, свыше 30 000<span class="block-text__supper">₽</span> - 0,25%
             </p>
 
             <button class="main-button tariff-button">Заполнить анкету</button>
@@ -203,19 +202,19 @@
 
         <ul class="instructions-list list__slider">
 
-            <li class="instructions-list_step">
+            <li class="instructions-list_step step__1">
               <img src="img/instructions/request-icon.svg" alt="" class="instructions-list_step_image">
               <h2 class="block-title block-title__heading3">Оставьте заявку</h2>
               <p class="block-text block-text__paragraph-small">Получите номер спецсчета уже через 10 минут.</p>
             </li>
 
-            <li class="instructions-list_step">
+            <li class="instructions-list_step step__2">
               <img src="img/instructions/requisites-icon.svg" alt="" class="instructions-list_step_image">
               <h2 class="block-title block-title__heading3">Получите  реквизиты</h2>
               <p class="block-text block-text__paragraph-small">Начните учавствовать в тендерах.</p>
             </li>
 
-            <li class="instructions-list_step">
+            <li class="instructions-list_step step__3">
               <img src="img/instructions/wait-icon.svg" alt="" class="instructions-list_step_image">
               <h2 class="block-title block-title__heading3">Ждите в удобном месте</h2>
               <p class="block-text block-text__paragraph-small">Приедем к вам, чтобы закончить с оформлением всех бумаг.</p>
@@ -239,7 +238,7 @@
     <!-- what you need section -->
     <div class="start-requirements">
         <h2 class="block-title block-title__heading2 block-text__centered">Что нужно для оформления спецсчета?</h2>
-        <!-- TODO: everything -->
+
     </div>
 
     <div class="article article__discount">
@@ -338,12 +337,10 @@
         </div>
 
         <ul class="page-footer_links-list">
-          <a href="#" class="link_blue link__footer">Пользовательское соглашение</a>
-          <a href="#" class="link_blue link__footer">Политика обработки персональных данных</a>
-          <a href="#" class="link_blue link__footer">Финакс</a>
+          <li><a href="#" class="link_blue link__footer">Пользовательское соглашение</a></li>
+          <li><a href="#" class="link_blue link__footer">Политика обработки персональных данных</a></li>
+          <li><a href="#" class="link_blue link__footer">Финакс</a></li>
         </ul>
-
-
       </div>
     </footer>
 	</body>

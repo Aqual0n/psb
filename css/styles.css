@@ -87,6 +87,10 @@ body {
   font-weight: normal;
 }
 
+.block-text__supper {
+  vertical-align: super;
+}
+
 .block-text__paragraph-header {
   font-size: 16px;
   line-height: 22px;
@@ -120,6 +124,7 @@ body {
   overflow-x: scroll;
 
   -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
 }
 
 .list__slider::-webkit-scrollbar {
@@ -133,6 +138,7 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  position: relative;
 
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -158,7 +164,7 @@ body {
 
 
 /*header*/
-.main-header {
+.logo-wrapper {
   margin-bottom: 35px;
 }
 
@@ -195,7 +201,8 @@ body {
   font-weight: normal;
   padding: 0;
 
-  width: 225px;
+
+  width: 100%;
   max-width: 100%;
   height: 65px;
   line-height: 65px;
@@ -210,6 +217,7 @@ body {
 
 .main-button:hover {
   background-color: #4D89FF;
+  box-shadow: 0px 20px 20px rgba(104, 130, 241, 0.2);
 }
 
 .main-button:active {
@@ -407,6 +415,7 @@ body {
 .instructions-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
   list-style: none;
 
   display: flex;
@@ -420,24 +429,38 @@ body {
   display: -o-flex;
   display: flex;
 
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: space-between;
 
   width: 180px;
 
   margin-right: 22px;
+
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.instructions-list_step p {
+  margin: 0;
+}
+
+.step__1 {
+  background-image: url(../img/backgrounds/step-1.png);
+}
+.step__2 {
+  background-image: url(../img/backgrounds/step-2.png);
+}
+.step__3 {
+  background-image: url(../img/backgrounds/step-3.png);
 }
 
 .instructions-list_step_image {
   margin-bottom: 22px;
+  margin-right: auto;
 }
 
 .how-to-start_button {
   margin-bottom: 25px;
-  width: 225px;
 }
 
 /*Что надо (не сделано)*/
@@ -625,7 +648,6 @@ body {
     margin-bottom: 25px;
   }
 
-
   .block-title__heading1 {
     font-size: 30px;
     line-height: 34px;
@@ -661,7 +683,7 @@ body {
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 873px;
   }
 
   .main-button {
@@ -669,18 +691,18 @@ body {
   }
 
   .mobile-only {
-      display: none;
+    display: none;
   }
 
 
   /*Специальный счёт*/
-  .header-wrapper {
+  .main-header {
     background-image: url(../img/backgrounds/car-bg.png);
     background-repeat: no-repeat;
     background-position: right top;
 
-    -webkit-background-size: 51%;
-    background-size: 51%;
+    -webkit-background-size: contain;
+    background-size: contain;
 
     padding-top: 40px;
   }
@@ -749,13 +771,19 @@ body {
 
   /*Госзакупки*/
 
+  .article {
+    padding-bottom: 0;
+  }
+
   .article__public-purchase .container {
     flex-flow: row;
   }
 
   .article_image {
-    margin-top: -50px;
-    margin-right: 25px;
+    margin-top: -110px;
+    transform: rotate(10deg) scale(.7);
+    width: 268px;
+    height: 353px;
   }
 
   /*Тендеры*/
@@ -770,7 +798,7 @@ body {
     justify-content: space-between;
   }
 
-  .tender-list_item {
+  .tender-list_item:not(:last-child) {
     margin-right: 20px;
   }
 
@@ -801,6 +829,9 @@ body {
     margin-bottom: 0;
   }
 
+  .instructions-list {
+    margin-bottom: 50px
+  }
 
   /*что надо (доделать)*/
 
@@ -819,6 +850,14 @@ body {
   .main-button__small.main-button__white {
     min-width: 155px;
     margin-left: 22px;
+  }
+
+  .article__discount h2{
+    margin-right: 25px;
+  }
+
+  .article_text-wrapper {
+    height: fit-content;
   }
 
   /*Форма*/
@@ -842,6 +881,10 @@ body {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+  }
+
+  .advantages-list img {
+    margin-bottom: 15px;
   }
 
   /*Подвал*/
@@ -870,4 +913,218 @@ body {
   .page-footer_links-list {
     flex-flow: row;
   }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .block-title__heading1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .block-title__heading2 {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 35px;
+  }
+
+  .block-title__heading3 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .block-text__paragraph-header {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .block-text__paragraph-regular {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .block-text__paragraph-small {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .container {
+    width: 72.83333%;
+    max-width: 873px;
+  }
+
+
+  /*Хэдер*/
+  .main-header {
+    margin-bottom: 66px;
+  }
+
+  .logo-wrapper .container {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .special-account .block-title__heading1 {
+    max-width: 522px;
+  }
+
+  .special-account .block-text__paragraph-header {
+    max-width: 400px;
+  }
+
+  .special-account {
+    padding-bottom: 148px;
+    margin-bottom: 0;
+  }
+
+  .special-account .container p:first-child {
+    margin-bottom: 14px;
+  }
+
+  /*Тарифы*/
+
+  .tariffes-section .block-title__heading2 {
+    text-align: center;
+  }
+
+  .tariffes-section .container {
+    width: 82.91666666%;
+    max-width: 995px;
+  }
+
+  .tariff-item {
+    width: 270px;
+
+    border: 1px solid rgba(38, 238, 157, .4);
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    padding: 25px 22px;
+    padding-top: 56px;
+    margin-right: 20px;
+  }
+
+  .tariff-button {
+    opacity: 0;
+    color: #ffffff;
+
+    background-color: #4D89FF;
+    box-shadow: 0px 10px 20px rgba(104, 130, 241, 0.2);
+  }
+
+  .tariff-button:hover {
+    background-color: #4D89FF;
+    cursor: pointer;
+  }
+
+  .tariff-button:focus {
+    background-color: #3D57C6;
+  }
+
+  .tariff-item:hover .tariff-button {
+    opacity: 1;
+
+    transition: opacity .1s linear;
+  }
+
+  .tariff-item:hover {
+    color: #ffffff;
+    background-color: #4365E9;
+
+    transition: background-color .1s linear;
+    transition: color .1s linear;
+  }
+
+  .tariff-item_price__number {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .tariff-conditions {
+    width: 105px;
+    height: 287px;
+    padding-top: 63px;
+  }
+
+  /*Госзакупки*/
+
+  .article {
+    background-color: #ffffff;
+  }
+
+  .article__public-purchase {
+    margin-bottom: 100px;
+  }
+
+  .tender-section {
+    padding: 0;
+  }
+
+  .article .container {
+    overflow: visible;
+    padding-top: 40px;
+  }
+
+  .article .container::before {
+    content: "";
+    position: absolute;
+
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%, -50%) matrix(-1, -0.05, -0.05, 1, 0, 0);
+
+    border-radius: 80px 150px 49px 127px;
+
+    width: 122.336769%;
+    height: 100%;
+
+    background-color: #4365E9;
+  }
+
+  .article_text-wrapper h2{
+    position: relative;
+  }
+
+  .article__public-purchase .article_image {
+    margin: 0;
+    margin-right: 95px;
+    transform: rotate(-15deg) scaleX(-1) scale(1.1) translateY(35px);
+  }
+
+
+
+
+  /*Инструкции*/
+  .instructions-list {
+    margin-bottom: 14px
+  }
+
+  .instructions-list_step {
+    width: 230px;
+  }
+
+  .special-account_text-wrapper {
+    padding-top: 40px;
+  }
+  /*Скидка финакс*/
+
+  .article_logo,
+  .article-discount_text-wrapper {
+    z-index: 1;
+  }
+
+  .article__discount .container::before {
+    transform: translate(-50%, -50%) matrix(-1, -0.05, -0.05, 1, 0, 0) scaleX(-1) rotate(-5deg);
+  }
+
+  .article__discount {
+    margin-bottom: 60px;
+  }
+
+
 }
