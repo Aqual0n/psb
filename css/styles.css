@@ -32,8 +32,16 @@ img {
 }
 
 .link_blue {
-  color: #0865E2;;
+  color: #0865E2;
   text-decoration: none;
+}
+
+.link_blue:hover {
+  border-bottom: 1px dashed #0865E2;
+}
+
+.link_blue:visited {
+  color: #9C5FB1;
 }
 
 body {
@@ -213,6 +221,7 @@ body {
   border: none;
   border-radius: 2px;
 
+  cursor: pointer;
 }
 
 .main-button:hover {
@@ -614,26 +623,36 @@ body {
   display: inline;
   content: "*";
   color: #4365E9;
+  margin-right: 5px;
 }
 
 .form-field-wrapper label{
   background-color: #ffffff;
 
   position: absolute;
-  top: 30px;
-  transform: translateY(-50%);
-  left: 20px;
+  top: -10px;
+  left: 15px;
+  padding-left: 5px;
 
-  transition: top .1s linear;
+  /*transition: top .1s linear;*/
 }
-
-.request-form_field:focus + label {
+/*на случай если надо будет переделать*/
+/*.request-form_field:focus + label {
   top: -10px;
   transform: none;
 
   transition: top .1s linear;
 
   color: rgba(0,0,0,0.5);
+}*/
+
+.request-form_field:invalid {
+  border-color: #FF6C6C;
+  color: #FF6C6C;
+}
+
+.request-form_field:disabled {
+  border-color: #5C6BC0;
 }
 
 .request-form_field {
@@ -676,6 +695,7 @@ body {
   display: flex;
 
   flex-flow: column;
+  padding-bottom: 50px;
 }
 
 .link__footer {
@@ -695,6 +715,10 @@ body {
   display: flex;
 
   flex-flow: column;
+}
+
+.page-footer_links-list li{
+  margin-right: 35px;
 }
 
 /*tablet*/

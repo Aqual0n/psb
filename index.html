@@ -301,22 +301,22 @@
           </div>
 
           <div class="form-field-wrapper">
-            <input type="text" class="request-form_field" id="request-form_name">
+            <input type="text" class="request-form_field" name="request-form_name" id="request-form_name" pattern="^[А-Яа-яЁё\s]+$" required>
             <label for="request-form_name">Моё имя <span class="form-field__required">*</span></label>
           </div>
 
           <div class="form-field-wrapper">
-            <input type="text" class="request-form_field" id="request-form_phone">
+            <input type="number" class="request-form_field" name="request-form_phone" id="request-form_phone" required>
             <label for="request-form_phone">Телефон <span class="form-field__required">*</span></label>
           </div>
 
           <div class="form-field-wrapper">
-            <input type="text" class="request-form_field" id="request-form_inn">
+            <input type="number" class="request-form_field" name="request-form_inn" id="request-form_inn" required>
             <label for="request-form_inn">ИНН <span class="form-field__required">*</span></label>
           </div>
 
           <div class="form-field-wrapper">
-            <input type="text" class="request-form_field" id="request-form_city">
+            <input type="text" class="request-form_field" name="request-form_city" id="request-form_city" pattern="^[А-Яа-яЁё\s]+$" required>
             <label for="request-form_city">Город <span class="form-field__required">*</span></label>
           </div>
 
